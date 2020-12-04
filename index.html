@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3b7d817951.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <form id="search-form">
+                            <input type="text" class="form-control" placeholder="Enter a city" autocomplete="off"
+                                autofocus="on" id="search-text-input" />
+                        </form>
+                        <button type="button" class="btn btn-primary">Current</button>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <h1>Stockholm</h1>
+                <h2 id="current-date">Thursday October 22, 2020</h2>
+                <h3 id="current-temp">
+                    <i class="fas fa-cloud-sun-rain main"></i>
+                    <br />
+                    <span class="main-temp"> 16 </span>
+                    <span class="units"> <a href="#" id="celcius-link">°C</a></span>
+                </h3>
+                <p class="important">9°C/18°C</p>
+                <p class="wind">
+                    Precipitation:60%
+                    <br />
+                    Humidity:16%
+                    <br />
+                    Wind: 3m/s
+                </p>
+                <hr />
+            </header>
+            <section class="weathericon">
+                <p class="forecast">5 Days Forecast</p>
+                <div class="row">
+                    <div class="col">
+                        <p>Friday</p>
+                        <i class="fas fa-sun"></i>
+                        <p>9°C/16°C</p>
+                    </div>
+                    <div class="col">
+                        <p>Saturday</p>
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <p>8°C/13°C</p>
+                    </div>
+                    <div class="col">
+                        <p>Sunday</p>
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <p>8°C/12°C</p>
+                    </div>
+                    <div class="col">
+                        <p>Monday</p>
+                        <i class="fas fa-sun"></i>
+                        <p>10°C/19°C</p>
+                    </div>
+                    <div class="col">
+                        <p>Tuesday</p>
+                        <i class="fas fa-sun"></i>
+                        <p>9C/18°C</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

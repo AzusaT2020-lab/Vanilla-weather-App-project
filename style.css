@@ -1,0 +1,62 @@
+body {
+  color: #42a6f5;
+  font-family: "Sora", sans-serif;
+  text-align: center;
+}
+h1,
+h3 {
+  color: #42a6f5;
+  font-size: 50px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 1.5 px;
+}
+i {
+  color: #f18654;
+  font-size: 25px;
+}
+hr {
+  border: 1px dashed #42a6f5;
+}
+p.forecast {
+  font-size: 20px;
+  font-weight: bold;
+}
+p.important {
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #42a6f5;
+  margin: 20px 0;
+}
+.card {
+  border: 3px solid #42a6f5;
+}
+.col-3 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding-top: 20px;
+}
+.main {
+  color: #f18654;
+  font-size: 100px;
+  margin: 20px 40px;
+}
+.weathericon {
+  font-weight: bold;
+}
+.wind {
+  color: #42a6f5;
+}
+
+@media screen and (min-width: 1000px) {
+  .wind {
+    color: #42a6f5;
+    float: right;
+    margin-top: -90px;
+    margin-right: 180px;
+  }
+}
